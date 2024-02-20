@@ -1,8 +1,8 @@
 from src.replacement import replacement_1
 
 
-def separation_line():
-    separation = replacement_1()
+def separation_line(separation):
+
     for transaction in separation:
         if transaction.get('from'):
             transaction['from'] = (transaction['from'][:-16]+" "+transaction['from'][-16:-12]+" "
@@ -12,4 +12,4 @@ def separation_line():
     #print(len(separation))
     return separation
 
-separation_line()
+#separation_line()

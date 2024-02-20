@@ -1,8 +1,8 @@
 from datetime import datetime
 from src.selection_execution import select
 
-def select_last():
-    time_select = select()
+def select_last(time_select):
+
     for transaction in time_select:
         if transaction.get('date'):
             transaction['date'] = transaction['date'][:10]+" "+transaction['date'][11:]
@@ -15,4 +15,4 @@ def select_last():
     #print(len(last_five))
     return last_five
 
-select_last()
+#select_last()

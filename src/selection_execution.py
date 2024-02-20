@@ -1,8 +1,8 @@
 import json
 
 
-def select():
-    with open("operations.json", "r", encoding="utf8") as f:
+def select(file):
+    with open(file, "r", encoding="utf8") as f:
         transactions_ = json.load(f)
 
     transactions_executed = []
@@ -14,5 +14,5 @@ def select():
     #print(transactions_executed)
     return transactions_executed
 
-select()
+#select()
 

@@ -1,8 +1,8 @@
 from src.select_time import select_last
 
 
-def replacement_1():
-    transactions_stars = select_last()
+def replacement_1(transactions_stars):
+
     for transaction in transactions_stars:
 
         if transaction.get('from'):
@@ -15,4 +15,4 @@ def replacement_1():
     #print(len(transactions_stars))
     return transactions_stars
 
-replacement_1()
+#replacement_1()
