@@ -6,7 +6,6 @@ def select(file):
 
     with open(file, "r", encoding="utf8") as f:
         transactions_ = json.load(f)
-    #print(transactions_)
     for transaction in transactions_:
         if transaction.get("state") == "EXECUTED":
             transactions_executed.append(transaction)

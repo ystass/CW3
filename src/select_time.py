@@ -1,6 +1,7 @@
 from datetime import datetime
 from src.selection_execution import select
 
+
 def select_last(time_select):
 
     for transaction in time_select:

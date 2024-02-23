@@ -6,15 +6,14 @@ from src.selection_execution import select
 from src.separation import separation_line
 
 text_output = []
+
+
 def output(text_output):
     file = os.path.join('operations.json')
     time_select = select(file)
     transactions_stars = select_last(time_select)
-    #print(transactions_stars)
     separation = replacement_1(transactions_stars)
-    #print(separation)
     output_display = separation_line(separation)
-   # print(output_display)
 
     text_output = []
 
